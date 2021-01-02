@@ -1,0 +1,27 @@
+h1{
+    color: royalblue;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.photo{
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.menu{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    background-color: grey;
+}
+.haut{
+    background-image: url(img/background-header.png);
+}
+.Landing{
+    background-image: url(img/landing-page.jpg);
+    color: white;
+}

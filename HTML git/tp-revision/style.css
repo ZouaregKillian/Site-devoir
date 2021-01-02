@@ -1,0 +1,85 @@
+/* ----- GENERAL ----- */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+/* ------ EN-TETE ------ */
+
+header {
+  padding: 30px;
+}
+header h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+header nav ul {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+header nav ul li {
+  padding: 20px;
+
+}
+header nav ul li a {
+  color: #000000;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 20px;
+}
+header nav ul li a:hover {
+  background-color: #e0e0e0;
+}
+
+/* ----- CONTENU PRINCIPAL ------ */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 10px;
+}
+
+/* ----- SECTION ------ */
+section {
+  margin-bottom: 50px;
+}
+section h2 {
+  border-bottom: 2px solid #000000;
+}
+
+/* ----- SECTION - A PROPOS------ */
+#a-propos img {
+  width: 400px;
+}
+
+/* ----- SECTION - DERNIERS VOYAGES ------ */
+#derniers-voyages a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  margin: 20px;
+}
+#derniers-voyages a img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* ----- SECTION - MES CONSEILS ------ */
+#mes-conseils ul li {
+  padding: 15px;
+}
+
+/* ----- FOOTER ------ */
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 30px;
+}
+footer p {
+  margin: 0;
+  text-align: center;
+}

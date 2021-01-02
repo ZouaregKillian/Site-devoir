@@ -1,0 +1,165 @@
+.menu{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    text-align: end;
+    box-shadow: 0px 14px 14px -2px rgba(0,0,0,0.75);
+
+}
+
+.menu p{
+    margin-right: 50px;
+}
+.body{
+    margin: 0;
+}
+.logo{
+    position: absolute;
+    height: 65px;
+    margin-left: 40px;
+}
+.mainPhotoJeu{
+    margin-top: 90px;
+    margin-left: 110px;
+    display: flex;
+}
+.mainPhotoJeu img{
+    height: 500px;
+}
+.information{
+    margin-left: 85px;
+}
+.titreDuJeu{
+    font-size: 300%;
+}
+.prixMain{
+    font-size: 250%;
+    color: rgb(141, 10, 10);
+}
+.description{
+    line-height: 49px;
+}
+.myButton {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #3b8ba8 5%, #408c99 100%);
+	background-color:#9e0c0c;
+	border-radius:8px;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #3d768a;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #3b8ba8 100%);
+	background-color:#408c99;
+}
+.video{
+    padding-left: 20%;
+    padding-top: 10%;
+}
+h2{
+    color: rgb(7, 97, 119);
+    padding-top: 5%;
+}
+table{
+    margin-left: 110px;
+    border-style: solid;
+}
+table td{
+    font-weight: bold;
+}
+.suggestion{
+    height: 321px;
+    width: 240px;
+    box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.75);
+    margin-left: 110px;
+}
+.suggestion img{
+    padding-left: 54px;
+}
+.suggestion .titreSuggestion{
+    text-align: center;
+}
+.suggestion .prixSuggestion{
+    text-align: center;
+    color: rgb(7, 97, 119);
+    font-size: larger;
+}
+.boutonSuggestion {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #3d768a;
+    margin-bottom: 100px;
+    margin-left:  45px;
+}
+.boutonSuggestion:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.suggestionGlobal{
+    display: inline-flex;
+}
+.liste{
+    margin-left: 100px;
+}
+.boutons{
+    display: inline-flex;
+    margin-left: 553px;
+}
+.favoris{
+    margin-left: 40px;
+}
+
+@media screen and (max-width:800px){
+    .description{
+        display: inline-block;
+        font-size: 0,2vw;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .mainPhotoJeu img{
+        height: 100px;
+    }
+    .titreDuJeu{
+        font-size: 20px;
+    }
+    .prixMain{
+        font-size: 20px;
+    }
+    .description{
+        font-size: 20px;
+        line-height: 20px;
+        margin-left: 0px;
+
+    }
+    .boutons{
+        margin-left: 120px;
+        display: inline-flex;
+    }
+    .video iframe{
+        width: 400px;
+        height: 300px;
+    }
+    table{
+        margin-left: 0px;
+    }
+    .suggestion{
+        margin-left: 0px;
+        display: inline;
+    }
+}
