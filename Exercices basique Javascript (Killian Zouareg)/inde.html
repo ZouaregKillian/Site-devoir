@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+</head>
+<body>
+    <p>Affichage de la date avec une seconde d'intervalle.</p>
+    <button onclick="affichageDate()">Appuyez-ici !</button>
+
+    <p>Affichage de la date avec trois secondes d'intervalle.</p>
+    <button onclick="affichageDateTrois()">Appuyez-ici !</button>
+    
+
+
+    <script>
+        let string = " Je m'appelle Jean Dupuis Dupuis, et j'ai 29 ans ";
+        let stringtwo = "depuis 10 ans déjà."
+        console.log(string.trim);
+        console.log(string);
+        string = string.replace("Dupuis", "")
+        console.log(string);
+        console.log(string.length);
+        console.log(string.indexOf("Dupuis"));
+        console.log(string.lastIndexOf("Dupuis"));
+        console.log(string.slice(13,14));
+        console.log(string.concat(" ",stringtwo));
+        console.log(string.indexOf("Il fait beau"));
+        console.log(string.indexOf("Dupuis Dupuis"));
+        console.log(string.indexOf("29"));
+        console.log(string.repeat(3));
+        console.log(string.replace("Dupuis","Dupont"));
+        console.log(string.startsWith(" Je m'appelle"));
+        console.log(string.toUpperCase());
+        console.log(string.toLowerCase());
+        stringTableau = string.split("");
+        console.log(stringTableau);
+        console.log(string.split(","));
+        console.log(stringTableau.join(" "));
+
+
+
+        let array = [ "Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
+        "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre" ];
+        
+        arraypop = array.pop();
+        console.log(array);
+        console.log(arraypop);
+        arrayShift = array.shift();
+        console.log(arrayShift);
+        console.log(array);
+        arrayPush = array.push("C'est fini")
+        console.log(array);
+        arrayUnshift = array.unshift("Ca commence");
+        console.log(array);
+        arraySplice = array.splice(3,1,"Pas Avril");
+        console.log(array);
+        arraySpliceTwo = array.splice(4,2,"Banane","Fraise");
+        console.log(array);
+        tableauUn = array.slice(0,4);
+        tableauDeux = array.slice(4,8);
+        tableauTrois = array.slice(8,11);
+        console.log(tableauUn);
+        console.log(tableauDeux);
+        console.log(tableauTrois);
+        tableauConcat = tableauUn.concat(tableauDeux,tableauTrois);
+        console.log(tableauConcat);
+        tableauReverse = tableauConcat.reverse();
+        console.log(tableauReverse);
+        console.log(tableauConcat.indexOf("MAI"));
+        tableauConcat.sort();
+        console.log(tableauConcat);
+
+
+        console.log(Math.cos(50));
+        console.log(Math.sqrt(4));
+        console.log(Math.round(11.3654635 + 1));
+        console.log(Math.round(11.3654635));
+        console.log(Math.random(0,2));
+        console.log(Math.random() * (6 - 1) + 1);
+        let entierHasard = Math.round((Math.random() * (6 - 1) + 1));
+        console.log(entierHasard);
+
+        function affichageDate(){
+            let date = new Date;
+            setInterval ( function() {alert (date); }, 1000);
+        }
+        
+        function affichageDateTrois(){
+            let date = new Date;
+            setInterval ( function() {alert (date); }, 3000);
+        }
+
+
+
+
+
+        const movies = [
+      {
+          title : "la communauté de l'anneau",
+          director : "Peter Jackson",
+          characters : [
+              "Aragorn",
+              "Legolas",
+              "Boromir",
+              "Gimli",
+              "Frodon",
+              "Sam",
+              "Pippin",
+              "Merry"
+          ]
+      },
+      {
+          title : "les 2 tours",
+          director : "Peter Jackson",
+          characters : [
+              "Galadielle",
+              "Eowyn",
+              "Arwen" 
+          ]
+      },
+      {
+          title : "le retour du roi",
+          director : "Peter Jackson",
+          characters : [
+              "Grimma",
+              "Theoden",
+              "Faramir",
+              "Saroumane"
+          ]
+      },
+  ];
+        
+        console.log(movies [0].title);
+        console.log(movies[1].director);
+        console.log(movies[2].characters);
+        console.log(movies[0].characters);
+
+        for(let i = 0; i < (movies[0].characters).length; i++){
+            console.log(movies[0].characters[i]);
+        }
+        </script>
+</body>
+</html>
